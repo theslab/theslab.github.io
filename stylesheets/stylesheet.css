@@ -3,7 +3,7 @@
   
 .project-name>a {
     color: #fff;
-    text-decoration: none;
+    text-decoration: none !important;
 }
 
 body {
