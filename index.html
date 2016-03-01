@@ -30,8 +30,17 @@ Using our Google extension, we will track the pages you go to, and the time you 
 
 <h2>
 <a id="interested" class="anchor" href="#interested" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Interested?</h2>
-<iframe id='inneriframe' src="https://docs.google.com/forms/d/1YnZA4hkx2uStiyLiX7AKrKqLELFWfkdD4Nq4Hqiw_Vo/viewform?embedded=true" frameborder="0" scrolling="no">Loading...</iframe>
-
+<div id="outer" style="
+    margin-left: -30px;
+    overflow: hidden;
+    position: absolute;
+    width: 400px;
+    height: 220px;">
+  <iframe id="inneriframe" src="https://docs.google.com/forms/d/1YnZA4hkx2uStiyLiX7AKrKqLELFWfkdD4Nq4Hqiw_Vo/viewform?embedded=true" frameborder="0" scrolling="no" width="500px" height="500px" style="
+    left: -30px;
+    position: absolute;
+    top: -100px;">Loading...</iframe>
+    </div>
     </section>
 
   
