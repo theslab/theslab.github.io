@@ -1,5 +1,10 @@
 * {
   box-sizing: border-box; }
+  
+.project-name>a {
+    color: #fff;
+    text-decoration: none;
+}
 
 body {
   padding: 0;
