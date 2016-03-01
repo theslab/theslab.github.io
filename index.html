@@ -53,13 +53,35 @@ Using our Google extension, we will track the pages you go to, and the time you 
 </div>
 
 
-<form id="mc-form" action="<script>
-$('#mc-form').ajaxChimp({
-    url: 'http://blahblah.us1.list-manage.com/subscribe/post?u=5afsdhfuhdsiufdba6f8802&id=4djhfdsh9'
-});</script>">
-	<input id="mc-email" type="email" placeholder="email">
-	<label for="mc-email"></label>
-	<button type="submit">Submit</button>
+<form class="pure-form center">
+    <script>
+    $( "#whitehomepage" ).click(function() {
+    formData = {
+        u: "3959eeadb32e02b85a792e21c",
+        id: "6d7613df26"
+    };
+    $.ajax({
+        url: "http://fiercelycurious.us1.list-manage.com/subscribe/post",
+        type: "POST",
+        crossDomain: true,
+        contentType: 'application/json',
+        data: formData,
+        dataType: "json",
+        success: function(data) {
+            //success handler
+        },
+        error: function() {
+            //error handler
+        }
+    });
+    });
+    </script>
+
+    <fieldset>
+        <label for="email_input_id"><input class="pure-input-1-3" placeholder=
+        "Email" type="email" /></label>
+    </fieldset><button class="whitehomepage" id="whitehomepage" type=
+    "submit">go!</button>
 </form>
 <!--End mc_embed_signup-->
 
