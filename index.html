@@ -8,6 +8,11 @@
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
     <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
+    
+    <link href="//cdn-images.mailchimp.com/embedcode/horizontal-slim-10_7.css" rel="stylesheet" type="text/css">
+    <style type="text/css">
+	#mc_embed_signup{background:#fff; clear:left; width:100%;}
+     </style>
   </head>
   <body>
     <section class="page-header">
@@ -33,13 +38,7 @@ Using our Google extension, we will track the pages you go to, and the time you 
 
 <!-- Begin MailChimp Signup Form -->
 
-<link href="//cdn-images.mailchimp.com/embedcode/horizontal-slim-10_7.css" rel="stylesheet" type="text/css">
-<style type="text/css">
-	#mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; width:100%;}
-	/* Add your own MailChimp form style overrides in your site stylesheet or in this style block.
-	   We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
-</style>
-
+<div id="mc_embed_signup">
 <form
     id="subscribe-form"
     action="http://github.us11.list-manage.com/subscribe/post-json?u=bdb59811b134a39f3f87b641c&amp;id=1d16765282"
@@ -47,17 +46,15 @@ Using our Google extension, we will track the pages you go to, and the time you 
   
 
     <div>
-        <input type="email" placeholder="email *" value="" name="EMAIL" >
+        <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
     </div>
 
-    <div>
-        <input type="submit" value="Submit" name="subscribe">
-    </div>
+    <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
     <div id="subscribe-result">
     </div>
 
 </form>
-
+</div>
 <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
 
 <script type="text/javascript">
