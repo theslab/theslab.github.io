@@ -22,14 +22,12 @@
 
     <section class="main-content">
       <h2>
-<a id="welcome-to-slab" class="anchor" href="#welcome-to-slab" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Welcome to Slab.</h2>
 
 <p>Slab is a story website.
 We find them, you read them.
 Using our Google extension, we will track the pages you go to, and the time you spend on each page. (We don't keep your info, I promise) Then, our AI figures out what else you will like, based on the info we gathered.</p>
 
 <h2>
-<a id="reading" class="anchor" href="#reading" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Reading</h2>
 
 <p>After Slab finds out what you like, we will find article that you will be interested by and stream them to the Slab website. You can read a short summary on the slab website, or click on the summary to go the page.</p>
 
@@ -102,16 +100,16 @@ Using our Google extension, we will track the pages you go to, and the time you 
                 },
                 success: function(data){
                     if (data.result != "success") {
-                        var message = data.msg || "Sorry. Unable to subscribe. Please try again later.";
+                        var message = data.msg || "Sorry. Unable to submit. Please try again later.";
                         $resultElement.css("color", "red");
                         if (data.msg && data.msg.indexOf("already subscribed") >= 0) {
-                            message = "You're already subscribed. Thank you.";
+                            message = "You've already subscribed! Thanks.";
                             $resultElement.css("color", "black");
                         }
                         $resultElement.html(message);
                     } else {
                         $resultElement.css("color", "black");
-                        $resultElement.html("Thank you!<br>You must confirm the subscription in your inbox.");
+                        $resultElement.html("Thank you! You must confirm the subscription in your inbox.");
                     }
                 }
             });
